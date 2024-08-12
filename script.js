@@ -69,7 +69,17 @@ ScrollReveal().reveal(".service__list li",{
     interval: 500,
     origin: "right",
 });
+//form
+function sendMail(){
+    let parms = {
+        name: document.querySelector('#name').value,
+        phone: document.getElementById("phone").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    }
 
+    emailjs.send("service_k7dgrie","template_e3xmpkp",parms).then(alert("Email Sent!!"));
+}
 //gallery Section
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",

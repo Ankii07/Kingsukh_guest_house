@@ -570,6 +570,8 @@ nav{
     padding: 0 2rem;
 }
 
+
+
 .form input, .form textarea {
     width: 100%;
     padding: 1rem;
@@ -578,6 +580,23 @@ nav{
     /* to unset the color */
     background-color: unset;
     color: #ffff;
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    color: white;
+}
+.btn2{
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 
 .form input:not(:first-child), .form textarea, .form button{
@@ -752,6 +771,14 @@ font-size: 1.10rem;
         overflow: hidden;
 
     }
+
+    .explore__content h4{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: var(--text-dark);
+}
     
     .map, .form{
         width: 100%;
@@ -787,6 +814,14 @@ font-size: 1.10rem;
         /* to unset the color */
         background-color: unset;
         color: #ffff;
+    }
+    form textarea{
+        height: 6rem;
+        resize: none;
+    }
+    
+    form .btn{
+        background-color: var(--white);
     }
     
     .form input:not(:first-child), .form textarea, .form button{
